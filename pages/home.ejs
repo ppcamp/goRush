@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>goRush</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark flex-column fixed-top" id="mainNav">
+        <div class="container">
+            <a class="underlineSlide navbar-brand" href="/"> go Rush!
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="underlineSlide nav-link" href="/profile">
+                            <i class="fas fa-user"></i> Perfil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underlineSlide nav-link" href="/store">
+                            <i class="fas fa-shopping-cart"></i> Loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underlineSlide nav-link" href="/help">
+                            <i class="fas fa-question-circle"></i> Ajuda
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Give a padding -->
+    <div class="position-relative" style="height:6em"></div>
+    <!-- !Navigation -->
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- A side menu -->
+            <div class="mx-auto col-lg-4 col-12">
+                <div class="row pb-4">
+                    <div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 90%">
+                        <div id="menu" class="card-body ">
+                            <h5 class="card-title text-center">
+                                <i class="fab fa-pied-piper pr-3"></i>Resumo
+                            </h5>
+                            <p>
+                                <i class="fas fa-id-card pr-3" title="Usuário">
+                                    <span class="text-muted font-weight-normal">
+                                        &nbsp <%= global.user %></span>
+                                </i>
+                                <br>
+                                <i class="fas fa-wallet pr-3" title="Créditos Disponíveis">
+                                    <span class="text-muted font-weight-normal">
+                                        &nbsp 30
+                                    </span>
+                                </i>
+                                <br>
+                                <i class="fas fa-download pr-3" title="Aulas compradas">
+                                    <span class="text-muted font-weight-normal">
+                                        &nbsp 45
+                                    </span>
+                                </i>
+                                <br>
+                                <i class="fas fa-upload pr-3" title="Aulas enviadas">
+                                    <span class="text-muted font-weight-normal">
+                                        &nbsp 15
+                                    </span>
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feed -->
+            <div class="col-lg-8 col-lg-offset-3 col-12 ">
+                <div class="row pb-4 ">
+                    <div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 90%">
+                        <div class="card-body ">
+                            <h5 class="text-left card-title">
+                                <i class="fas fa-file-alt pr-3"></i>Campo magnético
+                            </h5>
+                            <h6 class="text-left card-subtitle mb-2">
+                                <i class="fas fa-tags text-muted"></i>
+                                <a href="#" class="badge badge-light">Física 3</a>
+                                <a href="#" class="badge badge-light">Eletromagnetismo</a>
+                            </h6>
+                            <hr>
+                            <p class="card-text ">
+                                Campo Magnético é a concentração de magnetismo que é criado em torno de uma carga magnética num dete [...]
+                            </p>
+                        </div>
+                        <div class="container">
+                            <div class="row px-3 pb-3">
+                                <div class="col">
+                                    <span class="card-link text-right px-3 py-3">
+                                        <i class="fas fa-dollar-sign pr-3" title="Créditos Necessários">
+                                        <span class="text-reset font-weight-normal">
+                                            12
+                                        </span>
+                                    </i>
+                                    </span>
+                                </div>
+                                <div class="text-right col">
+                                    <button type="button" class="btn btn-outline-success">
+                                            Comprar
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pager -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-8 col-md-10 mx-auto ">
+                    <p class="copyright text-muted ">Copyright &copy; goRush</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.js "></script>
+
+</body>
+
+</html>

@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ppcamp/goRush/issues"
   },
-  "homepage": "https://github.com/ppcamp/goRush#readme"
+  "homepage": "https://github.com/ppcamp/goRush#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
 }

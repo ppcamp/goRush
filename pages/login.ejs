@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>goRush</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+</head>
+
+<body style="background: white;">
+    <div class="container" style="height: 100%;">
+        <div class="col">
+            <h1 id="logo" class="display-4 text-center p-4">go Rush!</h1>
+            <div class="col-md-8 mx-auto">
+                <div class="card m-0 shadow p-4 my-4">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="Login-tab" data-toggle="tab" href="#Login" role="tab" aria-controls="Login" aria-selected="true">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Sign-up-tab" data-toggle="tab" href="#Sign-up" role="tab" aria-controls="Sign-up" aria-selected="false">Sign-up</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+
+                        <!-- TAB de login -->
+                        <div class="tab-pane fade show active" id="Login" role="tabpanel" aria-labelledby="Login-tab">
+                            <form method="POST" class="p-4" action="auth/login">
+                                <div class="form-row mb-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="fieldUser"><i
+                                                    class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" name='userNick' placeholder="Nome de usuário" aria-label="Nome de usuário" aria-describedby="fieldUser">
+                                    </div>
+                                </div>
+                                <div class="form-row mb-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="fieldPsswd"><i
+                                                    class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" name='userPsswd' placeholder="Senha de usuário" aria-label="Senha de usuário" aria-describedby="fieldPsswd">
+                                    </div>
+                                </div>
+                                <div class="form-row mb-4">
+                                    <div class="text-right col">
+                                        <input class="btn btn-outline-primary" type='submit' value="Entrar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Sign up -->
+                        <div class="tab-pane fade" id="Sign-up" role="tabpanel" aria-labelledby="Sign-up-tab">
+                            <form method="POST" class="p-4" action="auth/signup">
+                                <div class="form-row mb-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="fieldName"><i
+                                                    class="fas fa-id-badge"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control " placeholder="Nome completo" aria-label="Nome completo" aria-describedby="fieldName" name='userName'>
+                                    </div>
+                                </div>
+                                <div class="form-row mb-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="fieldUser "><i
+                                                    class="fas fa-user "></i></span>
+                                        </div>
+                                        <input type="text" class="form-control " placeholder="Nome de usuário" aria-label="Nome de usuário" aria-describedby='fieldUser' name='userNick'>
+                                    </div>
+                                </div>
+                                <div class="form-row mb-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="fieldPsswd "><i
+                                                    class="fas fa-key "></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Senha de usuário" aria-label="Senha de usuário" aria-describedby="fieldPsswd" name='userPsswd'>
+                                    </div>
+                                </div>
+                                <div class="form-row mb-4 ">
+                                    <div class="text-right col ">
+                                        <input class="btn btn-outline-primary" type='submit' value='Criar conta'>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.js "></script>
+
+</body>
+
+</html>

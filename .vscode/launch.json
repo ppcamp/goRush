@@ -5,11 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "node",
             "request": "launch",
-            "name": "Chrome localhost",
-            "url": "file:///home/ppcamp/Documents/Git/projects/gorush/index.html",
-            "webRoot": "${workspaceFolder}"
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
         }
     ]
 }

@@ -1,0 +1,7 @@
+/* INPUT */
+
+#inputVideo,
+#inputFile {
+    display: none;
+    transition: 0.6s ease;
+}
