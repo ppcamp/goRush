@@ -24,18 +24,21 @@
             <div class="col-md-8 mx-auto">
                 <div class="card m-0 shadow p-4 my-4">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <!-- Login tab-->
                         <li class="nav-item">
-                            <a class="nav-link active" id="Login-tab" data-toggle="tab" href="#Login" role="tab" aria-controls="Login" aria-selected="true">Login</a>
+                            <a class="nav-link active" id="Login-tab" data-toggle="tab" href="#Login" role="tab" aria-controls="Login" aria-selected="true">Entrar</a>
                         </li>
+                        <!-- Sign-->
                         <li class="nav-item">
-                            <a class="nav-link" id="Sign-up-tab" data-toggle="tab" href="#Sign-up" role="tab" aria-controls="Sign-up" aria-selected="false">Sign-up</a>
+                            <a class="nav-link" id="Sign-up-tab" data-toggle="tab" href="#Sign-up" role="tab" aria-controls="Sign-up" aria-selected="false">Cadastrar</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
 
-                        <!-- TAB de login -->
+                        <!-- TAB de entrar -->
                         <div class="tab-pane fade show active" id="Login" role="tabpanel" aria-labelledby="Login-tab">
                             <form method="POST" class="p-4" action="auth/login">
+                                <!-- Nick -->
                                 <div class="form-row mb-4">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -45,6 +48,7 @@
                                         <input type="text" class="form-control" name='userNick' placeholder="Nome de usuário" aria-label="Nome de usuário" aria-describedby="fieldUser">
                                     </div>
                                 </div>
+                                <!-- Password -->
                                 <div class="form-row mb-4">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -54,6 +58,7 @@
                                         <input type="password" class="form-control" name='userPsswd' placeholder="Senha de usuário" aria-label="Senha de usuário" aria-describedby="fieldPsswd">
                                     </div>
                                 </div>
+                                <!-- BTN -->
                                 <div class="form-row mb-4">
                                     <div class="text-right col">
                                         <input class="btn btn-outline-primary" type='submit' value="Entrar">
@@ -62,9 +67,10 @@
                             </form>
                         </div>
 
-                        <!-- Sign up -->
+                        <!-- Sign cadastro -->
                         <div class="tab-pane fade" id="Sign-up" role="tabpanel" aria-labelledby="Sign-up-tab">
                             <form method="POST" class="p-4" action="auth/signup">
+                                <!-- Full name -->
                                 <div class="form-row mb-4">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -74,6 +80,18 @@
                                         <input type="text" class="form-control " placeholder="Nome completo" aria-label="Nome completo" aria-describedby="fieldName" name='userName'>
                                     </div>
                                 </div>
+                                <!-- Email -->
+                                <div class="form-row mb-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="userEmail">
+                                            @
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control " placeholder="E-mail" aria-label="E-mail" aria-describedby="email" name='userEmail'>
+                                    </div>
+                                </div>
+                                <!-- Nick -->
                                 <div class="form-row mb-4">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -83,6 +101,7 @@
                                         <input type="text" class="form-control " placeholder="Nome de usuário" aria-label="Nome de usuário" aria-describedby='fieldUser' name='userNick'>
                                     </div>
                                 </div>
+                                <!-- Password -->
                                 <div class="form-row mb-4">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -92,6 +111,7 @@
                                         <input type="password" class="form-control" placeholder="Senha de usuário" aria-label="Senha de usuário" aria-describedby="fieldPsswd" name='userPsswd'>
                                     </div>
                                 </div>
+                                <!-- BTN -->
                                 <div class="form-row mb-4 ">
                                     <div class="text-right col ">
                                         <input class="btn btn-outline-primary" type='submit' value='Criar conta'>

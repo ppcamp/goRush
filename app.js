@@ -25,8 +25,9 @@ app.get('/', (req, res, next) => {
 });
 
 // loggeed
-global.logged;
-global.user;
+global.logged; // session
+global.usuario = ''; // nick
+global.credito = ''; // current
 const reset_session = (() => {
     global.logged = false;
 });
