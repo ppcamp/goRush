@@ -44,7 +44,8 @@
 
 /* ONLY USEFULL ON GENERAL mode */
 
-.card h5>i {
+.card h5>i,
+.hps {
     /* Color inside cards */
     color: var(--color-nav-mobile);
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <%- include('__head.ejs') %>
+</head>
+
+<body style="background: white;">
+
+    <!-- Navigation -->
+    <%- include('__navbar.ejs') %>
+
+        <!-- Feed -->
+        <div class="container w-100">
+            <div class="row pb-5 m-1">
+                <!-- Topico -->
+                <div class="row w-100 mx-auto">
+                    <div class="text-center col p-5">
+                        <h4 class="hps">Menu lateral</h4>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col-lg-6 text-justify">
+                            <p>
+                                O menu lateral possui algumas informações simples, predispostas para facilitar o acesso à essas informações para os usuários de computador.
+                            </p>
+                            <p>
+                                Na ordem:
+                                <ol>
+                                    <li> Nome do usuário conectado;</li>
+                                    <li> Quantidade de créditos disponíveis; </li>
+                                    <li> Quantidade total de compras de crédito.</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="img/leftmenu.png" class="w-100 text-rigth col" alt="Menu lateral" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Topico -->
+                <div class="row w-100 mx-auto">
+                    <div class="text-center col p-5">
+                        <h4 class="hps">Menu superior</h4>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col-lg-6">
+                            <img src="img/supmenu.png" class="w-100 text-rigth col" alt="Menu sup" />
+                        </div>
+                        <div class="col-lg-6 text-justify">
+                            <p>
+                                O menu superior contêm os atalhos referentes à cada seção do site.
+                            </p>
+                            <p>
+                                Na ordem:
+                                <ol>
+                                    <li> Atalho para acessar o perfil, que contém as informações do menu lateral, acrescidas de gráficos e painéis para a troca de dados cadastrais, <b>e.g.,</b> email.</li>
+                                    <li> Compra de créditos; </li>
+                                    <li> Página atual;</li>
+                                    <li> Enviar conteúdo para análise dos administradores;</li>
+                                    <li> Finalizar sessão;</li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topico -->
+                <div class="row w-100 mx-auto">
+                    <div class="text-center col p-5">
+                        <h4 class="hps">Conteúdo</h4>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col-lg-6 text-justify">
+                            <p>
+                                A imagem simboliza a prévia que seria entregue ao usuário para que ele decida comprar, ou não, o conteúdo.
+                            </p>
+                            <p>
+                                O símbolo em azul, mostraria o tipo de conteúdo – neste caso, texto – logo após ele, o título do conteúdo e, em seguida, o usuário que submeteu.
+                                Na parte inferior ao cabeçalho, encontra-se a prévia do texto. Na última linha, encontra-se o preço (em créditos) do conteúdo, e o botão de compra.
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="img/main.png" class="w-100 text-rigth col" alt="Conteudo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('./__footer.ejs') %>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js "></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/clean-blog.js "></script>
+
+</body>
+
+</html>

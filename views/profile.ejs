@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<%- include('__head.ejs') %>
+<script src="js/vis/dist/vis.js"></script>
+<link href="js/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!-- Navigation -->
+<%- include('__navbar.ejs') %>
+
+<!-- Feed -->
+<div class="container">
+    <div class="row">
+        <div class="mx-auto col-lg-4 col-12">
+            <div class="row pb-4">
+                <div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 90%">
+                    <div class="card-body ">
+                        <h5 class="card-title text-center">
+                            <i class="fab fa-pied-piper pr-3"></i>
+                            Resumo
+                        </h5>
+                        <p>
+                            <i class="fas fa-id-card pr-3" title="Usuário">
+                            <span class="text-muted font-weight-normal">
+                            &nbsp <%= global.usuario %></span>
+                            </i>
+                            <br>
+                            <i class="fas fa-wallet pr-3" title="Créditos Disponíveis">
+                            <span class="text-muted font-weight-normal">
+                            &nbsp <%= global.credito %>
+                            </span>
+                            </i>
+                            <br>
+                            <i class="fas fa-download pr-3" title="Aulas compradas">
+                            <span class="text-muted font-weight-normal">
+                            &nbsp <%= global.usum %>
+                            </span>
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative col-lg-5 col-12">
+            <div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 90%">
+                <div class="card-body">
+                <h5>
+                <div class="card-title text-center font-weight-bold">
+                Histórico de compras
+                </div>
+                </h5>
+                <hr>
+                    <div id="visualization"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<%- include('__footer.ejs') %>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js "></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/clean-blog.js "></script>
+<script type="text/javascript">
+    var container = document.getElementById('visualization');
+    var items = [
+        {x: '2014-06-11', y: 10},
+        {x: '2014-06-12', y: 25},
+        {x: '2014-06-13', y: 30},
+        {x: '2014-06-14', y: 10},
+        {x: '2014-06-15', y: 15},
+        {x: '2014-06-16', y: 30}
+    ];
+
+    var dataset = new vis.DataSet(items);
+    var options = {
+        height: '300px',
+        style:'bar',
+        drawPoints: false,
+        start: '2014-06-10',
+        end: '2014-06-18'
+    };
+    var Graph2d = new vis.Graph2d(container, dataset, options);
+</script>
+
+</body>
+
+</html>
