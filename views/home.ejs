@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<%- include('__head.ejs') %>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<%- include('__navbar.ejs') %>
+
+<!-- Feed -->
+<div class="container">
+    <div class="row">
+        <div  id="menu" class="mx-auto col-lg-4 col-12">
+            <div class="row pb-4">
+                <div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 90%">
+                    <div class="card-body ">
+                        <h5 class="card-title text-center">
+                            <i class="fab fa-pied-piper pr-3"></i>
+                            Resumo
+                        </h5>
+                        <p>
+                            <i class="fas fa-id-card pr-3" title="Usuário">
+                            <span class="text-muted font-weight-normal">
+                            &nbsp <%= global.usuario %></span>
+                            </i>
+                            <br>
+                            <i class="fas fa-wallet pr-3" title="Créditos Disponíveis">
+                            <span class="text-muted font-weight-normal">
+                            &nbsp <%= global.credito %>
+                            </span>
+                            </i>
+                            <br>
+                            <i class="fas fa-download pr-3" title="Aulas compradas">
+                            <span class="text-muted font-weight-normal">
+                            &nbsp <%= global.usum %>
+                            </span>
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteudo -->
+        <div class="col-lg-8 col-lg-offset-3 col-12 ">
+<%  if (data.length > 0) {
+        data.forEach(iterator => {
+%>
+            <div class="row pb-4 ">
+                <div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 90%">
+                    <div class="card-body ">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5 class="text-left card-title">
+                                    <i class="fas fa-file-alt pr-3"></i>
+                                    <%= iterator.titulo %>
+                                </h5>
+                            </div>
+                            <div class="col-5 text-right">
+                                <span class="text-muted h6 text-uppercase">
+                                    <i><%= iterator.logins_nick %></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <p class="text-justify card-text ">
+                            <%= iterator.texto %>
+                        </p>
+                    </div>
+                    <div class="container">
+                        <div class="row px-3 pb-3">
+                            <div class="col">
+                                <span class="card-link text-right px-3 py-3">
+                                <i class="fas fa-dollar-sign pr-3" title="Créditos Necessários">
+                                <span class="text-reset font-weight-normal">
+                                    10
+                                </span>
+                                </i>
+                                </span>
+                            </div>
+                            <div class="text-right col">
+                                <button type="button" class="btn btn-outline-success">
+                                        Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<%
+    });
+} else {
+%>
+        </div>
+        <div class="col-lg-8 col-lg-offset-3 col-12 ">
+            <div class="row pb-4 ">
+                <div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 90%">
+                    <div class="card-body ">
+                        <h5 class="text-center card-title">
+                            Sem dados cadastrados no banco
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+<% }
+%>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<%- include('__footer.ejs') %>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js "></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/clean-blog.js "></script>
+
+</body>
+
+</html>

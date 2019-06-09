@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <%- include('__head.ejs') %>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <%- include('__navbar.ejs')%>
+
+    <!-- Main Content -->
+    <div class="container col-md-6 pb-5">
+
+        <div class="card p-5 shadow p-3 mb-5 bg-white rounded">
+            <h4 class="text-center">
+                Inserção de novo conteúdo
+            </h4>
+            <hr>
+            <br>
+            <form method="POST" action="/auth/insert/newcontent">
+                <!-- Title -->
+                <div class="row form-group pb-1">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control" id="titulo" name="newTitulo" placeholder="Campos elétricos">
+                </div>
+                <!-- Descr -->
+                <div class="row form-group pb-1">
+                    <label for="descr">Texto</label>
+                    <textarea type="text" class="form-control" id="descr" placeholder="Método para cálculo do campo elétrico usando superfície ..." name="newTexto"></textarea>
+                </div>
+
+                <div class="container pr-0 mx-0">
+                    <div class="text-right mx-0 pr-0">
+                        <button type="submit" class="btn btn-outline-primary btn-md ">Enviar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- Pager -->
+
+
+    <!-- Footer -->
+    <%- include('__footer.ejs')%>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js "></script>
+</body>

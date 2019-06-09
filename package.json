@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/ppcamp/goRush#readme",
   "dependencies": {
-    "mysql": "^2.17.1"
+    "browserfy": "^1.0.0",
+    "mysql": "^2.17.1",
+    "q": "^1.5.1",
+    "step": "^1.0.0"
   }
 }
