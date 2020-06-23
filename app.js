@@ -58,7 +58,7 @@ setInterval(reset_session, 600000);
 
 // Localhost config
 // const exec = require('child_process').execSync;
-var serverIp = '192.168.0.102';
+var serverIp = 'localhost';
 // var getServerIp = exec('ip address | grep -i "inet " | grep -v 127 | grep -E "[0-9.]{10,}"', 'sync', (err, stdout, stderr) => {
 // if (err) console.log(err);
 // var pattern = '[0-9.]{10,}';

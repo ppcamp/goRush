@@ -15,6 +15,7 @@ router.post('/signup', urlencodedParser, (req, res, next) => {
     var sqlStatment = 'INSERT INTO logins(nome,senha,nick,credito,email) VALUES("' + f.userName + '","' + f.userPsswd + '","' + f.userNick + '",30,"' + f.userEmail + '");';
 
     con.connect(function(err) {
+        if (err) throw err;
         console.log('Connected to db');
         con.query(sqlStatment, function(err, res, next) {
             console.log('Recorded, chck it');

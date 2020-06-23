@@ -1,6 +1,0 @@
-<div id="menuH" class="text-decoration-none card-body">
-    <i class="fas fa-user pr-3"></i>
-    <a href="#">
-        ppcamp
-    </a>
-</div>

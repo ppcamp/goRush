@@ -1,10 +1,10 @@
 // PG
 const mysql = require('mysql');
 const con = mysql.createConnection({
-    user: 'ppcamp',
-    host: 'localhost',
+    host: '127.0.0.1',
     database: 'gorush',
+    user: 'ppcamp',
     password: 'ppcamp',
-    // port: 5432, Default
+    port: 5432
 });
 module.exports = con;

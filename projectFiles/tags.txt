@@ -1,5 +1,0 @@
-<h6 class="text-left card-subtitle mb-2">
-    <i class="fas fa-tags text-muted"></i>
-    <a href="#" class="badge badge-light">Física 3</a>
-    <a href="#" class="badge badge-light">Eletromagnetismo</a>
-</h6>
